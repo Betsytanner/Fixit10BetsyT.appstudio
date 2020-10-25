@@ -45,6 +45,15 @@
         "Elements",
         "selToChange.json"
       ]
+    },
+    {
+      "!type": "External",
+      "file": [
+        "forms",
+        "customerUpdate",
+        "Elements",
+        "lblMessage1.json"
+      ]
     }
   ],
   "class": "",

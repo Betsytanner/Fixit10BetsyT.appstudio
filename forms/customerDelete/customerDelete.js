@@ -1,6 +1,5 @@
 /*
-
-let pw = //"Bluejay*2021"
+pw = //"Bluejay*2021"
 
 
 1. Used a textArea  or Dropdown that shows all the customer names, one per line.
@@ -9,7 +8,7 @@ Used a sql Delete  query to delete the customer chosen by the user from the disp
 Used an AJAX call to the database to delete the matching customer. 
 Checked if customer name exists in database before deleting it.
 Used a textArea to show the user the remaining customer names, using a template literal. 
-
+*/
 
 customerDelete.onshow=function(){
   txtResults_contents.style.height = "200px"

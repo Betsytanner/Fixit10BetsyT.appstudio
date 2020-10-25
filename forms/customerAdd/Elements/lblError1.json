@@ -19,7 +19,7 @@
   "hidden": "",
   "id": "lblError1",
   "labelStyle": "text",
-  "left": 105,
+  "left": 53,
   "mAll": "",
   "mBottom": "",
   "mLeft": "",
@@ -42,7 +42,7 @@
   "right": "auto",
   "script": "",
   "style": "",
-  "top": 48,
+  "top": 379,
   "value": "Label",
   "width": 186
 }

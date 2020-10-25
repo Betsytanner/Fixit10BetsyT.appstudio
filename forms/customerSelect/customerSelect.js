@@ -15,7 +15,7 @@ let pw = "Bluejay*2021"
 SELECT * FROM customer WHERE state == " "
 let state = "SELECT * FROM customer WHERE state == userState
 > Used a textArea to show the user the matching customers, one per line, using a template literal.
-
+*/
 
 customerSelect.onshow=function() {
   txtResults_contents.style.height = "200px"
@@ -51,7 +51,6 @@ txtAllNames.onclick=function(){
 if (typeof (s) == 'object') 
   return
 else
-  
   //when user clicks a name have it be matched to a state 
       //you have to have a match to where the user clicks the name and where the 
       //possibly take this out
@@ -72,7 +71,6 @@ else
         newQuery = `SELECT name FROM customer WHERE state = ${customerState}`
         req = Ajax("https://ormond.creighton.edu/courses/375/ajax-connection.php", "POST", "host=ormond.creighton.edu&user=bgt15846&pass=" + pw + "&database=bgt15846&query=" + query)
         if (req.status == 200) { //transit trip worked.
-    //has all roqs for for ex hores records 
        results = JSON.parse(req.responseText)
  //PROBLEM WITH THE ELSE 
  else 
@@ -82,7 +80,6 @@ else
     txtAllStates.value = message
      // end else
   else
-      txtAllStates = `Error code:  + req.status `
+      txtAllStates = `Error code:  + ${req.status} `
 
-*/
-
+}

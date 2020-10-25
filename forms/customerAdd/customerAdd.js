@@ -10,7 +10,7 @@ INSERT a pet into the database (assume it is not already in the database)
          - if .responseText is 500, means the insert worked - tell user so
          - if .responseText is not 500, means the insert did not work - tell user so
     > if transit didn't work, tell user error in transit
-
+*/
 
 pw = //"Bluejay*2021"
 customerAdd.onshow=function(){
@@ -46,7 +46,7 @@ btnAddJess.onclick=function(){
     let customerCity = "Omaha"
     let customerState = "NE"
     let customerzipcode = "68178"
-    let query = "INSERT INTO customer (name, street, city, zipcode) VALUES ('" + customerName + "', '" + "', " + customerStreet "+ " + customerCity + "', '" +   customerState '" + "', " +, '" + "', " + customerZipcode")
+    let query = "INSERT INTO customer (name, street, city, zipcode) VALUES ('" + customerName + "', '" + "', " + customerStreet "+ " + customerCity + "', '" +   customerState '" + "', '" + "', " + customerZipcode")
     //alert(query)
     req = Ajax("https://ormond.creighton.edu/courses/375/ajax-connection.php", "POST", "host=ormond.creighton.edu&user=clc90595&pass=" + pw + "&database=clc90595&query=" + query)
 
@@ -64,7 +64,7 @@ btnAddJess.onclick=function(){
 //shows all the customers that are in the database in the 2nd textarea
     let message = " "
     for (i = 0; i < allCustomer.length-1; i++)
-    message = message + allCustomer[i][0] + "\n"
+    message = message + allCustomer[i][1] + "\n"
     txtNonDelete1.value = message
 } 
        
